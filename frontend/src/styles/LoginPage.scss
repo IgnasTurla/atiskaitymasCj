@@ -1,0 +1,65 @@
+@import "variables";
+
+.auth-wrapper {
+  padding: 3rem 1rem;
+  background-color: $color-background;
+  font-family: $font-base;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .auth-card {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow-soft;
+    border: none;
+  }
+
+  .auth-title {
+    color: $color-primary;
+    font-weight: 700;
+  }
+
+  .form-label {
+    font-weight: 600;
+    color: $color-text;
+
+    svg {
+      margin-right: 0.4rem;
+    }
+  }
+
+  .form-control {
+    border-radius: $border-radius;
+    border: 1px solid #ccc;
+    transition: $transition-default;
+
+    &:focus {
+      border-color: $color-accent;
+      box-shadow: 0 0 0 0.15rem rgba(255, 77, 109, 0.25);
+    }
+  }
+
+  .error-message {
+    color: $color-accent;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+  }
+
+  .btn-primary {
+    background-color: $btn-solid-bg;
+    color: $btn-solid-text;
+    border: none;
+    border-radius: $border-radius;
+
+    &:hover {
+      background-color: darken($btn-solid-bg, 10%);
+      box-shadow: $box-shadow-hover;
+    }
+  }
+}

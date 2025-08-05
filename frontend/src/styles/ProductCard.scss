@@ -1,0 +1,52 @@
+@import "variables";
+
+.product-card {
+  border-radius: $border-radius;
+  box-shadow: $box-shadow-soft;
+  transition: $transition-default;
+  font-size: 0.9rem;
+
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 0.75rem;
+
+    .card-title {
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+      color: $color-primary;
+      font-weight: 600;
+    }
+
+    .card-text {
+      font-size: 0.9rem;
+      color: $color-accent;
+      font-weight: 500;
+    }
+
+    .btn {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.8rem;
+      transition: $transition-default;
+    }
+
+    .btn-outline-primary {
+      color: $btn-outline-text;
+      border: 1px solid $btn-outline-border;
+      background-color: transparent;
+
+      &:hover {
+        background-color: $btn-outline-hover-bg;
+        color: $btn-outline-hover-text;
+      }
+    }
+  }
+
+  &:hover {
+    box-shadow: $box-shadow-hover;
+    transform: translateY(-2px);
+  }
+}

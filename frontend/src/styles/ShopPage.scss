@@ -1,0 +1,70 @@
+@import "variables";
+
+.shop-page {
+  background-color: $color-background;
+  font-family: $font-base;
+  color: $color-text;
+  padding: 2rem 1rem;
+
+  .loader-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+  }
+
+  h1 {
+    color: $color-primary;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .card {
+    border-radius: $border-radius;
+    box-shadow: $box-shadow-soft;
+    transition: $transition-default;
+    height: 100%;
+
+    &:hover {
+      box-shadow: $box-shadow-hover;
+      transform: translateY(-2px);
+    }
+  }
+
+  .card-title {
+    color: $color-primary;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    color: $color-accent;
+    font-weight: 500;
+  }
+
+  .btn {
+    border-radius: $border-radius;
+    transition: $transition-default;
+  }
+
+  .btn-primary {
+    background-color: $btn-solid-bg;
+    color: $btn-solid-text;
+    border: none;
+
+    &:hover {
+      background-color: darken($btn-solid-bg, 10%);
+    }
+  }
+
+  .btn-outline-primary {
+    color: $btn-outline-text;
+    border: 1px solid $btn-outline-border;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $btn-outline-hover-bg;
+      color: $btn-outline-hover-text;
+    }
+  }
+}

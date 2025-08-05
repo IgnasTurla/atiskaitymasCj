@@ -1,0 +1,39 @@
+@import "variables";
+
+.main-navbar {
+  font-family: $font-base;
+  background-color: $color-background !important;
+  border-bottom: 1px solid #eee;
+
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: $color-primary !important;
+    transition: $transition-default;
+
+    &:hover {
+      color: $color-accent !important;
+    }
+  }
+
+  .nav-link {
+    font-weight: 500;
+    color: $color-text !important;
+    transition: $transition-default;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    &:hover {
+      color: $color-accent !important;
+    }
+
+    &.disabled {
+      color: #999 !important;
+      cursor: not-allowed;
+    }
+  }
+
+  .navbar-toggler {
+    border-color: transparent;
+  }
+}

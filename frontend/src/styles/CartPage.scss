@@ -1,0 +1,107 @@
+@import "variables";
+
+.cart-page {
+  padding: 2rem 1rem;
+  font-family: $font-base;
+  background-color: $color-background;
+  color: $color-text;
+
+  h2 {
+    color: $color-primary;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .cart-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: $border-radius;
+    margin-bottom: 1.5rem;
+    background-color: #fafafa;
+    box-shadow: $box-shadow-soft;
+
+    img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: $border-radius;
+    }
+
+    .cart-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+
+      h4 {
+        margin: 0;
+        font-weight: 600;
+        color: $color-primary;
+      }
+
+      p {
+        margin: 0;
+        font-size: 0.95rem;
+      }
+
+      label {
+        font-weight: 500;
+        margin-top: 0.5rem;
+
+        input {
+          margin-left: 0.5rem;
+          width: 60px;
+          padding: 0.3rem;
+          border: 1px solid #ccc;
+          border-radius: $border-radius;
+        }
+      }
+
+      .remove-btn {
+        align-self: start;
+        margin-top: 0.5rem;
+        background-color: transparent;
+        color: $color-accent;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        padding: 0.3rem 0.6rem;
+        transition: $transition-default;
+
+        &:hover {
+          color: darken($color-accent, 10%);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .cart-summary {
+    text-align: center;
+    padding: 1rem;
+    border-top: 2px solid #eee;
+
+    h3 {
+      margin-bottom: 1rem;
+      color: $color-primary;
+    }
+
+    .checkout-btn {
+      padding: 0.6rem 1.4rem;
+      font-weight: 600;
+      background-color: $btn-solid-bg;
+      color: $btn-solid-text;
+      border: none;
+      border-radius: $border-radius;
+      transition: $transition-default;
+
+      &:hover {
+        background-color: darken($btn-solid-bg, 10%);
+        box-shadow: $box-shadow-hover;
+      }
+    }
+  }
+}
